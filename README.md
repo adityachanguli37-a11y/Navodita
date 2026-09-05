@@ -1,18 +1,32 @@
 # NexaAI: Intelligent Hybrid NLP & General AI Assistant
 
+[![Live Demo](https://img.shields.io/badge/demo-online-brightgreen.svg)](https://navodita-chatbot.onrender.com)
+[![Render](https://img.shields.io/badge/deployed%20on-Render-46E3B7.svg)](https://navodita-chatbot.onrender.com)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/framework-Flask-lightgrey.svg)](https://flask.palletsprojects.com/)
-[![OpenAI](https://img.shields.io/badge/API-OpenAI%20Responses-green.svg)](https://platform.openai.com/)
+[![Google Gemini](https://img.shields.io/badge/AI-Google%20Gemini-4285F4.svg)](https://ai.google.dev/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.0%2B-orange.svg)](https://scikit-learn.org/)
-[![Tests](https://img.shields.io/badge/tests-27%20passing-brightgreen.svg)](tests/)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](tests/)
 
-An enterprise-grade **Intelligent Hybrid Conversational AI Assistant** combining the precision of a safe AST mathematical calculator, conservative conversational intent classification, strict local knowledge retrieval, and the universal intelligence of **OpenAI (Responses API & Chat Completions)** with transparent graceful fallbacks.
+🌐 **Live Demo:** [https://navodita-chatbot.onrender.com](https://navodita-chatbot.onrender.com)
+
+An enterprise-grade **Intelligent Hybrid Conversational AI Assistant** combining the precision of a safe AST mathematical calculator, conservative conversational intent classification, strict local knowledge retrieval, and the universal intelligence of **Google Gemini API** (`gemini-3.5-flash-lite`) with transparent graceful fallbacks.
+
+---
+
+## 🚀 Live Deployment
+
+The application is deployed live on Render free tier:
+- **Web App:** [https://navodita-chatbot.onrender.com](https://navodita-chatbot.onrender.com)
+- **Health Check:** [https://navodita-chatbot.onrender.com/health](https://navodita-chatbot.onrender.com/health)
+
+*(Note: On Render's free tier, the instance may spin down after 15 minutes of inactivity. Please allow ~30 seconds for the initial cold start).*
 
 ---
 
 ## 💡 System Architecture
 
-NexaAI guarantees that **for every question, the final answer directly and accurately addresses that question**. The system rejects intent hijacking and weak local matches, routing general inquiries to OpenAI.
+NexaAI guarantees that **for every question, the final answer directly and accurately addresses that question**. The system rejects intent hijacking and weak local matches, routing general inquiries to Google Gemini.
 
 ```
                            [ USER QUESTION ]
@@ -34,10 +48,10 @@ NexaAI guarantees that **for every question, the final answer directly and accur
 (25 * 8, sqrt(144))    (hello, thanks, bye, hours)  (what, why, how, code, etc.)
 Source: "calculator"      Source: "intent_model"             │
                                                              ▼
-                                                    [ OpenAI General AI ]
-                                                   (Official Python SDK:
-                                                    Responses API & Chat API)
-                                                    Source: "openai"
+                                                    [ Google Gemini AI ]
+                                                  (Official google.genai SDK:
+                                                   gemini-3.5-flash-lite)
+                                                   Source: "gemini"
                                                              │
                                                   (If Offline / No Key)
                                                              │
@@ -54,23 +68,12 @@ Source: "calculator"      Source: "intent_model"             │
 ```
 
 ### Core Architecture Pillars:
-1. **OpenAI Universal General AI**: Uses the official OpenAI Python SDK supporting both the modern Responses API (`client.responses.create`) and Chat Completions (`client.chat.completions.create`). Configurable via `OPENAI_MODEL` with zero hardcoded keys.
+1. **Google Gemini Universal AI**: Uses the official `google.genai` SDK with `gemini-3.5-flash-lite` for universal knowledge, coding, science, and general question answering.
 2. **Strict Intent Hijacking Prevention**: The ML intent classifier (TF-IDF + Logistic Regression) is strictly restricted to conversational markers (`hello`, `thanks`, `goodbye`) and explicit bot operations. It is never allowed to hijack general, informational, or technical questions.
 3. **Strictly Gated Local Knowledge Base**: Local documents are returned only if there is high semantic similarity AND explicit topic relevance. If a question is not directly covered, it is never served a loose answer.
-4. **Safe Mathematical Calculator**: Safely parses arithmetic expressions into an Abstract Syntax Tree (AST), rejecting `eval()` and arbitrary code completely. Questions *about* math (e.g. "Why does multiplication work?") go to OpenAI.
-5. **Multi-Turn Context & Topic Switching**: Resolves follow-up pronouns (`"What are its advantages?"`) while cleanly resetting context when the user switches topics (e.g. from Machine Learning to Black Holes).
+4. **Safe Mathematical Calculator**: Safely parses arithmetic expressions into an Abstract Syntax Tree (AST), rejecting `eval()` and arbitrary code completely. Questions *about* math (e.g. "Why does multiplication work?") go to Gemini.
+5. **Multi-Turn Context & Topic Switching**: Resolves follow-up pronouns (`"What are its advantages?"`) while cleanly resetting context when the user switches topics.
 6. **Confidence-Aware Truthful Fallback**: Transparently informs the user if a query cannot be answered locally and the cloud AI is offline, preventing hallucinated or misleading dictionary definitions.
-
----
-
-## 🚀 Features
-
-- **Accurate Universal Question Answering**: Understands the user's actual question and answers it directly.
-- **OpenAI Responses API Integration**: Seamless integration with OpenAI models (default: `gpt-4o-mini`).
-- **Safe Calculator**: Evaluates arithmetic expressions (`+`, `-`, `*`, `/`, `%`, `**`, `sqrt`, `()`) without security vulnerabilities.
-- **Transparent Source Attribution**: Every response clearly indicates its origin (`Source: OpenAI Intelligence`, `Source: Knowledge Base`, `Source: Intent Model`, `Source: Calculator`).
-- **Multi-Turn Conversation**: Context-aware follow-ups with bounded session history.
-- **Modern Responsive Web UI**: Glassmorphism dark-theme interface with markdown rendering and code block styling.
 
 ---
 
@@ -81,12 +84,15 @@ Navodita/
 ├── app.py                     # Flask web server and REST API endpoints (/chat, /health)
 ├── chatbot.py                 # HybridChatbot controller coordinating all layers
 ├── knowledge_engine.py        # Strict TF-IDF knowledge base retriever & context resolver
-├── openai_service.py          # OpenAI Responses API & Chat Completions service wrapper
+├── gemini_service.py          # Google Gemini service wrapper (google.genai SDK)
 ├── calculator.py              # Safe AST-based mathematical expression parser
 ├── nlp_utils.py               # Tokenization, lemmatization, stop-words, cleaning
 ├── universal_qa.py            # Encyclopedic question answering engine
 ├── train_model.py             # Script to train and evaluate ML intent classifier
-├── verify_questions.py        # Verification script testing all required questions
+├── render.yaml                # Render Infrastructure-as-Code deployment specification
+├── Procfile                   # Process file for Gunicorn production deployment
+├── requirements.txt           # Python dependencies (Flask, google-genai, gunicorn, etc.)
+├── .env.example               # Template for environment configuration
 ├── data/
 │   ├── intents.json           # Labeled conversational patterns
 │   └── knowledge_base.json    # Local technical and scientific knowledge documents
@@ -99,43 +105,32 @@ Navodita/
 │   ├── css/style.css          # Glassmorphism dark-theme styling
 │   └── js/chat.js             # Client state management, AJAX chat, history tracker
 └── tests/
-    └── test_chatbot.py        # 27 comprehensive pytest automated unit & integration tests
+    └── test_chatbot.py        # Comprehensive pytest automated unit & integration tests
 ```
 
 ---
 
-## 🛠️ Installation & Setup
+## 🛠️ Local Installation & Setup
 
 ### 1. Prerequisites
 - Python 3.10+ installed.
+- Free Google Gemini API Key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 
 ### 2. Install Dependencies
 ```bash
-pip install flask scikit-learn nltk pytest requests openai
+pip install -r requirements.txt
 ```
 
-### 3. Environment Variables Configuration
-To enable the OpenAI general AI engine, set your API key in the environment:
-
-**Windows (PowerShell):**
-```powershell
-$env:OPENAI_API_KEY = "your-actual-api-key"
-$env:OPENAI_MODEL = "gpt-4o-mini"   # Optional, defaults to gpt-4o-mini
-```
-
-**Windows (CMD):**
-```cmd
-set OPENAI_API_KEY=your-actual-api-key
-set OPENAI_MODEL=gpt-4o-mini
-```
-
-**Linux / macOS:**
+### 3. Environment Configuration
+Copy `.env.example` to `.env` and add your API key:
 ```bash
-export OPENAI_API_KEY="your-actual-api-key"
-export OPENAI_MODEL="gpt-4o-mini"
+cp .env.example .env
 ```
 
-> **Note**: If `OPENAI_API_KEY` is not provided, the chatbot operates gracefully in offline mode using the safe AST calculator and strictly verified local knowledge.
+In `.env`:
+```env
+GEMINI_API_KEY=your_actual_gemini_api_key_here
+```
 
 ### 4. Train the Intent Classification Model
 ```bash
@@ -147,12 +142,7 @@ python train_model.py
 pytest -v
 ```
 
-### 6. Run Full Question Verification
-```bash
-python verify_questions.py
-```
-
-### 7. Start the Web Application
+### 6. Start the Web Application
 ```bash
 python app.py
 ```
@@ -181,27 +171,21 @@ Sends a message and optional conversation history.
 ```json
 {
   "success": true,
-  "answer": "Quantum computing is a multidisciplinary field comprising aspects of computer science, physics, and mathematics that utilizes quantum mechanics to solve complex problems faster than classical computers...",
+  "answer": "Quantum computing is a multidisciplinary field...",
   "response": "Quantum computing is a multidisciplinary field...",
-  "source": "openai",
+  "source": "gemini",
   "confidence": 0.98,
   "conversation_id": "optional-uuid"
 }
 ```
 
 ### `GET /health`
-Returns system status, OpenAI availability, model name, and knowledge base topic count.
-
----
-
-## 🧪 Evaluation & Test Coverage
-
-The test suite in [`tests/test_chatbot.py`](file:///c:/Users/adity/OneDrive/Desktop/Projects/Navodita/tests/test_chatbot.py) includes 27 comprehensive tests:
-- **Math AST Calculator**: Arithmetic operations, powers, parentheses, square roots, division-by-zero handling, code injection rejection.
-- **Intent Hijacking Rejection**: Proves that arbitrary informational and general questions are NEVER answered with intent canned responses, even when the ML classifier produces 99% confidence for an unrelated intent.
-- **Conversational Intents**: Accurate detection of greetings, goodbyes, thanks, business hours, and contact inquiries.
-- **OpenAI Responses API & Chat Completions**: Unit and mock tests verifying correct API call parameters and system prompt delivery.
-- **Knowledge Base Gating**: Strict topic-entity matching and rejection of unrelated queries.
-- **Contextual Follow-ups**: Anaphoric resolution ("What are its advantages?") across conversation turns.
-- **Topic Switching**: Verifies that when a user switches topics, previous context does not pollute the new question.
-- **Flask API Contract**: Complete verification of `/chat` and `/health` response formats and error handling.
+Returns system status, Gemini availability, model name, and knowledge base topic count:
+```json
+{
+  "status": "healthy",
+  "gemini_available": true,
+  "model": "gemini-3.5-flash-lite",
+  "kb_topics_loaded": 10
+}
+```
