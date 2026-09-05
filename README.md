@@ -18,7 +18,6 @@ An enterprise-grade **Intelligent Hybrid Conversational AI Assistant** combining
 
 The application is deployed live on Render free tier:
 - **Web App:** [https://navodita-chatbot.onrender.com](https://navodita-chatbot.onrender.com)
-- **Health Check:** [https://navodita-chatbot.onrender.com/health](https://navodita-chatbot.onrender.com/health)
 
 *(Note: On Render's free tier, the instance may spin down after 15 minutes of inactivity. Please allow ~30 seconds for the initial cold start).*
 
