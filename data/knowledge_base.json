@@ -1,0 +1,516 @@
+[
+  {
+    "topic": "artificial_intelligence",
+    "title": "Artificial Intelligence (AI)",
+    "keywords": [
+      "ai",
+      "artificial intelligence",
+      "turing",
+      "intelligent systems",
+      "expert systems",
+      "agi",
+      "narrow ai",
+      "generative ai"
+    ],
+    "summary": "Artificial intelligence (AI) is the simulation of human intelligence processes by computer systems, including learning, reasoning, and self-correction.",
+    "content": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines programmed to think, learn, reason, and solve problems like humans. It encompasses a broad range of technologies, including machine learning, deep learning, computer vision, robotics, and natural language processing. AI is broadly classified into Narrow AI (designed to perform specific tasks such as chess playing, facial recognition, or web searches), General AI (AGI, hypothetical systems possessing human-level cognitive capabilities across diverse domains), and Superintelligent AI. Key applications of modern AI include autonomous driving, medical diagnostics, automated speech recognition, fraud detection, and generative language models."
+  },
+  {
+    "topic": "machine_learning",
+    "title": "Machine Learning (ML)",
+    "keywords": [
+      "machine learning",
+      "ml",
+      "supervised learning",
+      "unsupervised learning",
+      "reinforcement learning",
+      "training data",
+      "features",
+      "overfitting"
+    ],
+    "summary": "Machine learning is a subset of AI where computers learn patterns from data to make predictions or decisions without being explicitly programmed.",
+    "content": "Machine learning is a branch of artificial intelligence that allows computers to learn patterns from data and make predictions or decisions without being explicitly programmed for every case. Instead of writing fixed rules, engineers feed training data into mathematical algorithms that iteratively optimize internal parameters to minimize error. Machine learning is organized into three primary paradigms: Supervised Learning (where models learn from labeled input-output pairs, such as regression and classification), Unsupervised Learning (where models discover hidden structures and groupings in unlabeled data, such as clustering and PCA dimensionality reduction), and Reinforcement Learning (where agents learn optimal actions through trial-and-error interactions and reward feedback). ML powers search rankings, recommendation engines, spam filtering, and risk scoring."
+  },
+  {
+    "topic": "deep_learning",
+    "title": "Deep Learning (DL)",
+    "keywords": [
+      "deep learning",
+      "neural networks",
+      "layers",
+      "backpropagation",
+      "cnn",
+      "rnn",
+      "transformer",
+      "weights"
+    ],
+    "summary": "Deep learning is a subset of machine learning based on multi-layered artificial neural networks that automatically extract hierarchical representations from data.",
+    "content": "Deep learning is a specialized subset of machine learning inspired by the biological structure and function of the human brain. It utilizes artificial neural networks with multiple stacked layers\u2014hence 'deep'\u2014to automatically discover hierarchical feature representations directly from raw data like images, audio, and text, eliminating the need for manual feature engineering. Fundamental deep learning architectures include Convolutional Neural Networks (CNNs) for spatial and image processing, Recurrent Neural Networks (RNNs) and LSTMs for sequential time-series data, and Transformer architectures for contextual attention and large language modeling. Training deep networks relies on optimization algorithms like gradient descent and backpropagation."
+  },
+  {
+    "topic": "natural_language_processing",
+    "title": "Natural Language Processing (NLP)",
+    "keywords": [
+      "nlp",
+      "natural language processing",
+      "tokenization",
+      "lemmatization",
+      "tf-idf",
+      "sentiment analysis",
+      "pos tagging",
+      "language models"
+    ],
+    "summary": "Natural Language Processing is the interdisciplinary field combining computer science and linguistics to enable computers to understand, interpret, and generate human language.",
+    "content": "Natural Language Processing (NLP) is a branch of artificial intelligence and computational linguistics focused on enabling computers to understand, interpret, manipulate, and generate human language in a meaningful and valuable way. Core NLP tasks include text tokenization, stop-word removal, lemmatization and stemming, part-of-speech (POS) tagging, named entity recognition (NER), sentiment analysis, text classification, and machine translation. Classical NLP heavily utilizes statistical techniques like n-grams, bag-of-words, and TF-IDF (Term Frequency-Inverse Document Frequency) paired with linear classifiers, while modern NLP leverages dense word embeddings (Word2Vec, GloVe) and self-attention Transformer models like BERT and GPT."
+  },
+  {
+    "topic": "ai_vs_ml",
+    "title": "Difference Between AI and Machine Learning",
+    "keywords": [
+      "difference between ai and ml",
+      "ai vs ml",
+      "compare ai and ml",
+      "ai and machine learning difference",
+      "how ai differs from ml"
+    ],
+    "summary": "AI is the broad umbrella concept of creating intelligent machines, while machine learning is a specific subset of AI that learns patterns from data.",
+    "content": "The primary difference between Artificial Intelligence (AI) and Machine Learning (ML) is their scope and methodology: AI is the overarching umbrella concept of creating machines capable of simulating human intelligence, decision-making, and problem-solving, whereas Machine Learning is a specific subfield and practical implementation of AI that enables systems to automatically learn and improve from experience without being explicitly hardcoded. All machine learning is AI, but not all AI is machine learning (for instance, classical rule-based expert systems and search trees are AI but not ML). While AI aims to simulate human reasoning, ML focuses on mathematical algorithms optimizing statistical accuracy on historical datasets."
+  },
+  {
+    "topic": "neural_networks_simple",
+    "title": "Neural Networks in Simple Words",
+    "keywords": [
+      "neural networks in simple words",
+      "explain neural networks simply",
+      "what is a neural network",
+      "neural network explanation",
+      "simple neural net"
+    ],
+    "summary": "A neural network is a computer system designed like a team of connected helpers that learn to recognize patterns by adjusting how much they listen to each other.",
+    "content": "In simple words, think of an artificial neural network like a team of connected miniature helpers called 'neurons' organized in layers. When you give the network information\u2014such as a picture of a cat\u2014the input layer receives the numbers representing pixels. Each neuron looks at the clues, multiplies them by an importance score called a 'weight', and passes its opinion to the next layer. The final output layer announces the guess: 'It's a cat!' If the guess is wrong, the network works backwards through an error-correcting process called backpropagation, adjusting each helper's importance weights so it will make a smarter, more accurate guess next time."
+  },
+  {
+    "topic": "python_programming",
+    "title": "Python Programming Language",
+    "keywords": [
+      "python",
+      "explain python",
+      "python language",
+      "what is python",
+      "python programming",
+      "guido van rossum"
+    ],
+    "summary": "Python is a high-level, interpreted, general-purpose programming language celebrated for its clear, readable syntax and versatile ecosystem.",
+    "content": "Python is a high-level, interpreted, dynamically typed, and general-purpose programming language created by Guido van Rossum and first released in 1991. Python emphasizes code readability through clean indentation and intuitive syntax that closely resembles plain English. Python supports multiple programming paradigms, including object-oriented, procedural, and functional programming. Because of its massive ecosystem of open-source packages\u2014such as NumPy and Pandas for data manipulation, Scikit-Learn, PyTorch, and TensorFlow for machine learning, and Flask, Django, and FastAPI for web development\u2014Python has become the premier programming language worldwide for AI, data science, scientific computing, and automation."
+  },
+  {
+    "topic": "python_advantages",
+    "title": "Advantages and Benefits of Python",
+    "keywords": [
+      "advantages of python",
+      "benefits of python",
+      "why use python",
+      "why is python popular",
+      "python features"
+    ],
+    "summary": "Python's key advantages include readable syntax, rapid prototyping, cross-platform portability, dynamic typing, and a vast ecosystem of third-party libraries.",
+    "content": "The major advantages of Python include:\n1. Readability and Simplicity: Python's expressive, uncluttered syntax minimizes boilerplate code, enabling engineers to write fewer lines and maintain clean codebases.\n2. Extensive Library Ecosystem: Python boasts over 400,000 packages on PyPI, offering standard and battle-tested tools for machine learning, statistics, backend web APIs, web scraping, and automation.\n3. Rapid Development and Prototyping: As an interpreted language with dynamic typing, developers can test concepts and iterate rapidly without lengthy compilation cycles.\n4. Vibrant Community: A huge global community produces documentation, tutorials, and continuous improvements.\n5. Portability and Integration: Python seamlessly executes across Windows, macOS, Linux, and embeds readily with C/C++."
+  },
+  {
+    "topic": "recursion",
+    "title": "Recursion in Computer Science",
+    "keywords": [
+      "recursion",
+      "explain recursion",
+      "what is recursion",
+      "recursive function",
+      "base case",
+      "call stack"
+    ],
+    "summary": "Recursion is a programming technique where a function solves a problem by calling itself with smaller sub-problems until reaching a base condition.",
+    "content": "Recursion is a fundamental programming and mathematical problem-solving technique where a function calls itself directly or indirectly to solve a smaller instance of the same problem. A well-designed recursive function always consists of two essential components: 1) The Base Case (a stopping condition that produces an immediate result without further recursive calls, preventing infinite recursion) and 2) The Recursive Step (which reduces the input and calls the function again). Each recursive call is allocated a frame on the system's execution call stack; if the base case is omitted or unreachable, the system exhausts available stack memory, triggering a 'stack overflow' error. Classic examples of recursion include computing factorials, traversing binary trees, and sorting algorithms like QuickSort and MergeSort."
+  },
+  {
+    "topic": "database_systems",
+    "title": "Databases and Database Management Systems",
+    "keywords": [
+      "database",
+      "what is a database",
+      "dbms",
+      "rdbms",
+      "nosql",
+      "acid properties",
+      "data storage"
+    ],
+    "summary": "A database is an organized collection of structured data stored electronically, managed by a Database Management System (DBMS).",
+    "content": "A database is an organized, systematically structured electronic collection of data stored and accessed digitally through computer systems. Databases are controlled by a Database Management System (DBMS), which provides users and applications with tools to create, read, update, and delete (CRUD) records while ensuring security, concurrency control, and data integrity. Databases are broadly divided into Relational Databases (RDBMS, like PostgreSQL, MySQL, SQLite, and Oracle, which arrange data in relational tables with defined schemas and use SQL) and NoSQL Databases (such as MongoDB, Cassandra, and Redis, which store unstructured or semi-structured data like JSON documents, key-values, columns, or graphs). Relational databases emphasize ACID properties (Atomicity, Consistency, Isolation, Durability) to guarantee reliable transactions."
+  },
+  {
+    "topic": "sql",
+    "title": "Structured Query Language (SQL)",
+    "keywords": [
+      "sql",
+      "what is sql",
+      "structured query language",
+      "select query",
+      "joins",
+      "relational database",
+      "ddl",
+      "dml"
+    ],
+    "summary": "SQL is the standard declarative programming language used to manage, query, and manipulate relational databases.",
+    "content": "Structured Query Language (SQL) is the standard domain-specific declarative language designed for storing, manipulating, querying, and managing relational database systems. Developed at IBM in the early 1970s, SQL allows users to describe what data they wish to retrieve or update rather than programming the low-level procedural steps to fetch it. SQL statements are categorized into Data Query Language (DQL, e.g., SELECT), Data Manipulation Language (DML, e.g., INSERT, UPDATE, DELETE), Data Definition Language (DDL, e.g., CREATE, ALTER, DROP), and Data Control Language (DCL, e.g., GRANT, REVOKE). SQL features powerful capabilities like multi-table JOINs, filtering with WHERE, grouping with GROUP BY, and aggregations with COUNT, SUM, and AVG."
+  },
+  {
+    "topic": "mongodb",
+    "title": "MongoDB and Document Databases",
+    "keywords": [
+      "mongodb",
+      "what is mongodb",
+      "nosql database",
+      "bson",
+      "document database",
+      "collections",
+      "mongo"
+    ],
+    "summary": "MongoDB is a leading open-source NoSQL document database that stores data in flexible, JSON-like BSON documents.",
+    "content": "MongoDB is a popular open-source NoSQL document-oriented database designed for high availability, horizontal scalability, and developer agility. Instead of storing data in rigid rows and columns like relational databases, MongoDB stores records as flexible, semi-structured BSON (Binary JSON) documents grouped into collections. This schema-free design permits records within the same collection to have varying fields and nested sub-documents or arrays, making it ideal for evolving applications, real-time analytics, content management, and mobile backends. MongoDB offers expressive query filters, secondary indexing, powerful aggregation pipelines, and built-in replica sets and sharding for automatic horizontal scaling."
+  },
+  {
+    "topic": "cybersecurity",
+    "title": "Cybersecurity and Information Security",
+    "keywords": [
+      "cybersecurity",
+      "what is cybersecurity",
+      "infosec",
+      "cia triad",
+      "malware",
+      "firewall",
+      "phishing",
+      "encryption"
+    ],
+    "summary": "Cybersecurity is the practice of protecting computer systems, networks, devices, and data from unauthorized access, cyberattacks, and damage.",
+    "content": "Cybersecurity is the practice of defending computer systems, networks, servers, mobile devices, and sensitive data from malicious attacks, unauthorized access, identity theft, and digital disruptions. The bedrock of information security is the CIA Triad: 1) Confidentiality (preventing unauthorized disclosure of private data through encryption and access controls), 2) Integrity (protecting data accuracy and preventing unauthorized tampering through hashing and digital signatures), and 3) Availability (ensuring systems remain accessible to authorized users through redundancy and DDoS mitigation). Common cyber threats include malware (ransomware, trojans, viruses), phishing scams, man-in-the-middle attacks, and SQL injection vulnerabilities. Defensive tools include firewalls, multi-factor authentication (MFA), vulnerability scanners, and zero-trust network architectures."
+  },
+  {
+    "topic": "cloud_computing",
+    "title": "Cloud Computing",
+    "keywords": [
+      "cloud computing",
+      "what is cloud computing",
+      "aws",
+      "azure",
+      "gcp",
+      "iaas",
+      "paas",
+      "saas",
+      "virtualization"
+    ],
+    "summary": "Cloud computing is the on-demand delivery of computing services including servers, storage, databases, and networking over the internet.",
+    "content": "Cloud computing is the on-demand delivery of IT resources and computing services\u2014such as virtual servers, elastic storage, managed databases, networking, software, and analytics\u2014over the internet with pay-as-you-go pricing. Rather than purchasing and maintaining physical on-premise data centers, businesses rent computing capacity from major cloud service providers like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP). Cloud computing is categorized into three service models: Infrastructure as a Service (IaaS, e.g. EC2 virtual machines and storage), Platform as a Service (PaaS, e.g. Heroku and App Engine providing runtime environments for code deployment), and Software as a Service (SaaS, e.g. Google Workspace and Salesforce). Key benefits include scalability, elasticity, cost efficiency, global availability, and automated disaster recovery."
+  },
+  {
+    "topic": "computer_networks",
+    "title": "Computer Networks and Internet Architecture",
+    "keywords": [
+      "computer networks",
+      "networking",
+      "tcp/ip",
+      "osi model",
+      "router",
+      "switch",
+      "dns",
+      "ip address",
+      "packets"
+    ],
+    "summary": "A computer network is a system of interconnected computing devices that exchange data and share resources using communication protocols.",
+    "content": "A computer network is a telecommunications network consisting of interconnected computing nodes (computers, servers, routers, and switches) that communicate with one another using standardized protocols to share data, files, and computational resources. The fundamental conceptual framework for understanding network communication is the 7-layer OSI Model (Physical, Data Link, Network, Transport, Session, Presentation, Application) and the practical 4-layer TCP/IP Model (Network Access, Internet, Transport, Application). Critical protocols include IP (Internet Protocol) for addressing and packet routing, TCP (Transmission Control Protocol) for reliable, connection-oriented packet delivery, UDP for fast, low-latency streaming, DNS for translating human-friendly domain names into IP addresses, and HTTP/HTTPS for secure web page transmission."
+  },
+  {
+    "topic": "how_internet_works",
+    "title": "How the Internet Works",
+    "keywords": [
+      "how does the internet work",
+      "how the internet works",
+      "internet explained",
+      "packets",
+      "routing",
+      "tcp/ip internet"
+    ],
+    "summary": "The internet is a global network of interconnected computers communicating via standardized protocols by breaking messages into routed packets.",
+    "content": "The internet works as a global network of interconnected computer networks communicating through the TCP/IP protocol suite. When you enter a web address (URL) into your browser: 1) Your browser queries a Domain Name System (DNS) server to translate the hostname into an IP address. 2) Your device initiates a secure TCP/TLS handshake with the destination server. 3) Your request is sliced into tiny digital packages called 'packets', each labeled with source and destination IP addresses. 4) Hardware routers and switches route these packets across fiber optic cables, satellite links, and cellular towers via the fastest paths. 5) The destination web server receives the packets, reassembles them in the correct sequence, processes the request, and transmits the response back to your device, where your browser renders the webpage."
+  },
+  {
+    "topic": "operating_systems",
+    "title": "Operating Systems (OS)",
+    "keywords": [
+      "operating system",
+      "os",
+      "kernel",
+      "process management",
+      "virtual memory",
+      "file system",
+      "linux",
+      "windows"
+    ],
+    "summary": "An operating system is system software that manages computer hardware and software resources and provides common services for computer programs.",
+    "content": "An operating system (OS) is essential system software that acts as an intermediary between computer hardware and user applications. The core component of an OS is the Kernel, which has complete control over everything occurring in the system. The primary functions of an operating system are: 1) Process Management (scheduling CPU time slices across running programs and managing threads), 2) Memory Management (allocating RAM, tracking used memory blocks, and managing Virtual Memory paging via disk swap space), 3) File System Management (organizing files, directories, permissions, and disk storage access), 4) Device Management (interfacing with hardware peripherals via device drivers), and 5) Security and Access Control (protecting system resources from unauthorized processes). Popular operating systems include Linux, Microsoft Windows, macOS, Android, and iOS."
+  },
+  {
+    "topic": "data_structures",
+    "title": "Data Structures in Computer Science",
+    "keywords": [
+      "data structures",
+      "arrays",
+      "linked lists",
+      "stacks",
+      "queues",
+      "hash tables",
+      "trees",
+      "graphs",
+      "binary tree"
+    ],
+    "summary": "Data structures are specialized formats for organizing, storing, and accessing data efficiently inside computer memory.",
+    "content": "Data structures are specialized formats and systematic mechanisms for organizing, processing, retrieving, and storing data within a computer so that it can be used effectively. Selecting the proper data structure is critical for optimal software performance. Common linear data structures include: Arrays (contiguous memory blocks providing O(1) index lookups), Linked Lists (nodes with pointers allowing fast sequential insertions and deletions), Stacks (Last-In-First-Out / LIFO collections used in undo operations and call stacks), and Queues (First-In-First-Out / FIFO collections used in printer queues and task scheduling). Common non-linear data structures include: Hash Tables / Dictionaries (key-value mappings using hash functions for average O(1) searches), Trees (hierarchical node structures like Binary Search Trees, Tries, and Heaps), and Graphs (sets of vertices connected by edges representing networks and relationships)."
+  },
+  {
+    "topic": "algorithms",
+    "title": "Algorithms and Computational Complexity",
+    "keywords": [
+      "algorithms",
+      "sorting",
+      "searching",
+      "big o",
+      "time complexity",
+      "space complexity",
+      "dijkstra",
+      "binary search"
+    ],
+    "summary": "An algorithm is an unambiguous, step-by-step procedure for solving a computational problem or performing a calculation.",
+    "content": "An algorithm is a well-defined, finite, unambiguous sequence of computational instructions and logical steps designed to solve a specific problem or perform a task. Algorithm efficiency is evaluated using asymptotic Big-O notation, which measures how time (execution speed) and space (memory consumption) requirements scale as the input size (n) grows toward infinity. Fundamental algorithm families include: Searching Algorithms (Linear Search O(n), Binary Search O(log n)), Sorting Algorithms (QuickSort and MergeSort O(n log n), BubbleSort O(n^2)), Graph Algorithms (Breadth-First Search BFS, Depth-First Search DFS, Dijkstra's shortest path algorithm), and Dynamic Programming (breaking complex problems into overlapping subproblems and memoizing results, as seen in the Fibonacci sequence and Knapsack problem)."
+  },
+  {
+    "topic": "software_engineering",
+    "title": "Software Engineering Principles",
+    "keywords": [
+      "software engineering",
+      "sdlc",
+      "agile",
+      "scrum",
+      "ci/cd",
+      "design patterns",
+      "refactoring",
+      "version control",
+      "git"
+    ],
+    "summary": "Software engineering is the disciplined, systematic application of engineering approaches to the design, development, testing, and maintenance of software.",
+    "content": "Software engineering is the systematic, disciplined, quantifiable approach to developing, operating, maintaining, and retiring software systems. It encompasses the complete Software Development Life Cycle (SDLC): requirements gathering, architectural design, coding, testing, continuous integration, deployment, and ongoing maintenance. Modern software engineering predominantly adopts Agile and Scrum methodologies, featuring short iterative sprints, continuous customer feedback, and adaptive planning. Core engineering principles include SOLID object-oriented design principles, DRY ('Don't Repeat Yourself'), Clean Code, automated Unit and Integration Testing (TDD), version control with Git, and Continuous Integration / Continuous Deployment (CI/CD) pipelines to automate reliable software deliveries."
+  },
+  {
+    "topic": "web_development",
+    "title": "Web Development (Frontend and Backend)",
+    "keywords": [
+      "web development",
+      "frontend",
+      "backend",
+      "full stack",
+      "client server",
+      "rest api",
+      "spa",
+      "responsive design"
+    ],
+    "summary": "Web development is the work involved in building, creating, and maintaining websites and web applications hosted on the internet or intranets.",
+    "content": "Web development encompasses the creation, construction, and maintenance of interactive websites and web applications accessible over the internet via browsers. It is structured into three main domains: 1) Frontend Development (the client-facing user interface and visual interactive elements built using HTML for markup structure, CSS for layout styling, and JavaScript/TypeScript for dynamic interactivity, often accelerated by modern frameworks like React, Vue, or Angular), 2) Backend Development (the server-side logic, database interactions, authentication, and application business logic implemented using languages like Python, Node.js, Java, Go, or PHP alongside RESTful APIs or GraphQL), and 3) Full Stack Development (the integration of both frontend client layers and backend server/database architectures)."
+  },
+  {
+    "topic": "java_programming",
+    "title": "Java Programming Language",
+    "keywords": [
+      "java",
+      "jvm",
+      "object oriented java",
+      "java programming",
+      "spring boot",
+      "write once run anywhere"
+    ],
+    "summary": "Java is a class-based, object-oriented, strongly-typed programming language engineered for enterprise portability via the Java Virtual Machine.",
+    "content": "Java is a class-based, object-oriented, strongly-typed programming language developed by James Gosling at Sun Microsystems and launched in 1995. Built around the foundational philosophy of 'Write Once, Run Anywhere' (WORA), Java programs are compiled into standardized bytecode that executes on any operating system equipped with a Java Virtual Machine (JVM). Java features automatic memory management with garbage collection, rich multithreading support, robust compile-time type checking, and an expansive standard library. It powers large-scale enterprise backends (utilizing frameworks like Spring Boot), Android mobile applications, large financial processing systems, and distributed big data pipelines (such as Apache Hadoop and Spark)."
+  },
+  {
+    "topic": "javascript_programming",
+    "title": "JavaScript Programming Language",
+    "keywords": [
+      "javascript",
+      "js",
+      "ecmascript",
+      "node.js",
+      "frontend scripting",
+      "v8 engine",
+      "typescript"
+    ],
+    "summary": "JavaScript is a high-level, dynamic, multi-paradigm programming language that powers interactive behavior across the World Wide Web.",
+    "content": "JavaScript (frequently abbreviated as JS) is a lightweight, interpreted, just-in-time compiled, multi-paradigm programming language with first-class functions, prototype-based object orientation, and dynamic typing. Created by Brendan Eich in 1995 for Netscape Navigator, JavaScript is one of the core foundational technologies of the World Wide Web alongside HTML and CSS, providing dynamic scripting, animations, form validation, and event handling directly inside client web browsers. With the advent of the Chrome V8 engine and runtime environments like Node.js, JavaScript expanded beyond browsers to high-performance server-side web APIs, desktop apps (Electron), and mobile development (React Native)."
+  },
+  {
+    "topic": "html_and_css",
+    "title": "HTML and CSS Technologies",
+    "keywords": [
+      "html",
+      "css",
+      "html and css",
+      "web styling",
+      "markup",
+      "flexbox",
+      "css grid",
+      "dom"
+    ],
+    "summary": "HTML provides the semantic structure of web documents, while CSS governs their visual presentation, layout, and styling.",
+    "content": "HTML (HyperText Markup Language) and CSS (Cascading Style Sheets) form the core building blocks for constructing web pages. HTML serves as the structural skeleton of web documents, utilizing semantic markup elements (such as <header>, <nav>, <article>, <p>, <button>, and <table>) to define content hierarchy and build the Document Object Model (DOM) tree in the browser. CSS controls the visual layout, color palette, typography, animations, and responsive formatting of HTML elements across varied screen dimensions using selectors, properties, the Box Model, Flexbox, and CSS Grid systems. While HTML gives the page its structural meaning, CSS provides its visual styling and aesthetics."
+  },
+  {
+    "topic": "telephone_invention",
+    "title": "Invention of the Telephone",
+    "keywords": [
+      "who invented the telephone",
+      "inventor of telephone",
+      "alexander graham bell",
+      "telephone history",
+      "first telephone call"
+    ],
+    "summary": "Alexander Graham Bell is widely credited with inventing and patenting the first practical telephone in 1876.",
+    "content": "The invention of the practical telephone is credited to Scottish-born inventor and scientist Alexander Graham Bell. Bell was awarded the first official US patent for the electrical transmission of vocal sounds (Patent No. 174,465) on March 7, 1876. Three days later, on March 10, 1876, Bell made the historic first successful telephone transmission to his assistant Thomas Watson, famously uttering: 'Mr. Watson, come here, I want to see you.' Italian inventor Antonio Meucci and American engineer Elisha Gray also developed pioneering electrical voice transmission devices around the same era."
+  },
+  {
+    "topic": "capital_of_france",
+    "title": "Capital of France",
+    "keywords": [
+      "capital of france",
+      "what is the capital of france",
+      "paris france",
+      "french capital"
+    ],
+    "summary": "Paris is the capital and largest city of France.",
+    "content": "The capital of France is Paris. Situated along the Seine River in northern-central France, Paris has stood as a global center for art, fashion, gastronomy, science, philosophy, and commerce for centuries. Renowned landmarks in Paris include the Eiffel Tower, the Louvre Museum, Notre-Dame Cathedral, and the Arc de Triomphe. Paris also serves as the political, administrative, and economic heart of the French Republic."
+  },
+  {
+    "topic": "why_sky_is_blue",
+    "title": "Why the Sky is Blue",
+    "keywords": [
+      "why is the sky blue",
+      "why sky is blue",
+      "rayleigh scattering",
+      "blue sky explanation",
+      "scattering of light"
+    ],
+    "summary": "The sky appears blue due to Rayleigh scattering, where Earth's atmosphere scatters shorter blue wavelengths of sunlight more than other colors.",
+    "content": "The sky appears blue because of an optical phenomenon known as Rayleigh Scattering. Sunlight may appear white, but it is composed of all the colors of the visible spectrum, each traveling in waves of differing lengths (red has the longest wavelength, while violet and blue have the shortest). When sunlight strikes Earth's atmosphere, gases like nitrogen and oxygen scatter light in all directions. Because shorter wavelengths scatter much more efficiently than longer red wavelengths (scattering intensity is inversely proportional to the fourth power of wavelength, 1/\u03bb^4), blue light is scattered across the sky in every direction, coloring the daytime sky blue."
+  },
+  {
+    "topic": "jokes",
+    "title": "Jokes and Humor",
+    "keywords": [
+      "tell me a joke",
+      "joke",
+      "funny joke",
+      "say a joke",
+      "programming joke",
+      "humor"
+    ],
+    "summary": "A collection of clever programming and computer science jokes.",
+    "content": "Here is a classic tech joke for you:\nWhy do programmers prefer dark mode?\nBecause light attracts bugs!\n\nAnother one:\nThere are 10 types of people in the world: those who understand binary, and those who don't!\n\nWhy did the developer go broke?\nBecause he used up all his cache!"
+  },
+  {
+    "topic": "blockchain_technology",
+    "title": "Blockchain Technology",
+    "keywords": [
+      "blockchain",
+      "blockchain technology",
+      "distributed ledger",
+      "smart contracts",
+      "consensus",
+      "decentralized ledger"
+    ],
+    "summary": "Blockchain is a decentralized, distributed digital ledger technology that records transactions across many computers securely.",
+    "content": "Blockchain is a decentralized, distributed, and immutable digital ledger technology that securely records transactions across a peer-to-peer network. Each block in the chain contains a cryptographic hash of the previous block, a timestamp, and transaction data, making it practically impossible to tamper with past records without altering all subsequent blocks. Consensus mechanisms such as Proof of Work (PoW) and Proof of Stake (PoS) ensure agreement among decentralized nodes without requiring a central authority. Key applications of blockchain include cryptocurrencies (such as Bitcoin and Ethereum), smart contracts that self-execute according to coded conditions, supply chain tracking, and decentralized finance (DeFi)."
+  },
+  {
+    "topic": "quantum_computing",
+    "title": "Quantum Computing",
+    "keywords": [
+      "quantum computing",
+      "quantum computer",
+      "qubits",
+      "superposition",
+      "entanglement",
+      "quantum algorithms"
+    ],
+    "summary": "Quantum computing harnesses quantum mechanics to solve complex problems exponentially faster than classical computers.",
+    "content": "Quantum computing is an emerging multidisciplinary field of computer science and physics that utilizes the unique principles of quantum mechanics to process information. Unlike classical computers that encode data into binary bits (0 or 1), quantum computers use quantum bits, or qubits, which can exist in a state of Superposition (representing both 0 and 1 simultaneously). Furthermore, qubits exhibit Quantum Entanglement, allowing them to share states instantaneously. This exponential computational parallelism enables quantum algorithms\u2014such as Shor's algorithm for factoring and Grover's algorithm for search\u2014to solve complex optimization, cryptography, and molecular simulation problems far beyond classical limits."
+  },
+  {
+    "topic": "api_systems",
+    "title": "Application Programming Interfaces (APIs)",
+    "keywords": [
+      "api",
+      "what is an api",
+      "rest api",
+      "application programming interface",
+      "restful api",
+      "endpoints",
+      "json api"
+    ],
+    "summary": "An API (Application Programming Interface) is a set of protocols allowing different software applications to communicate and exchange data.",
+    "content": "An Application Programming Interface (API) is a formalized computing interface that enables distinct software systems and services to communicate, exchange data, and trigger operations seamlessly. The most common web architecture is the RESTful API (Representational State Transfer), which utilizes standard HTTP methods: GET (to retrieve data), POST (to submit new data), PUT/PATCH (to update existing data), and DELETE (to remove records). APIs serialize payloads in standardized formats like JSON. By decoupling client frontends from backend databases, APIs allow developers to integrate external services\u2014such as payment gateways, weather feeds, and authentication\u2014rapidly."
+  },
+  {
+    "topic": "tcp_vs_udp",
+    "title": "Difference Between TCP and UDP",
+    "keywords": [
+      "difference between tcp and udp",
+      "tcp vs udp",
+      "tcp and udp",
+      "compare tcp and udp",
+      "tcp vs udp differences"
+    ],
+    "summary": "TCP is a reliable, connection-oriented transport protocol with flow control, while UDP is a lightweight, connectionless protocol optimized for low latency.",
+    "content": "The fundamental difference between TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) lies in their trade-off between reliability and speed at the Transport Layer:\n1. Connection: TCP is connection-oriented, requiring a three-way handshake (SYN, SYN-ACK, ACK) before data transfer, whereas UDP is connectionless and sends datagrams immediately.\n2. Reliability: TCP guarantees delivery by numbering packets, verifying acknowledgments, and retransmitting lost packets; UDP provides no retransmission guarantee.\n3. Speed and Overhead: UDP has minimal packet header overhead (8 bytes vs 20+ bytes for TCP) and zero handshake latency, making it ideal for live video streaming, VoIP, and online multiplayer gaming, while TCP is essential for web pages (HTTP/HTTPS), file transfers, and emails."
+  },
+  {
+    "topic": "neural_networks_learning",
+    "title": "How Neural Networks Learn",
+    "keywords": [
+      "how do neural networks learn",
+      "how neural networks learn",
+      "neural network learning process",
+      "backpropagation gradient descent",
+      "how neural nets learn"
+    ],
+    "summary": "Neural networks learn by making forward predictions, measuring errors with a loss function, and iteratively updating weights via backpropagation and gradient descent.",
+    "content": "Neural networks learn through an iterative mathematical optimization process consisting of three core stages:\n1. Forward Propagation: Input features pass through weighted connections and activation functions across successive hidden layers to compute an output prediction.\n2. Loss Calculation: A loss function (such as Mean Squared Error for regression or Cross-Entropy for classification) quantitatively measures the error between the network's prediction and the actual ground truth label.\n3. Backpropagation and Gradient Descent: The network calculates the gradient (partial derivative) of the loss function with respect to every internal weight using the calculus chain rule, propagating errors backward. An optimizer (such as SGD or Adam) then adjusts the weights in the opposite direction of the gradient to progressively minimize error across training epochs."
+  },
+  {
+    "topic": "python_reverse_string",
+    "title": "How to Reverse a String in Python",
+    "keywords": [
+      "reverse a string",
+      "write a simple python program to reverse a string",
+      "reverse string python",
+      "write python code to reverse a string",
+      "reverse a string in python"
+    ],
+    "summary": "In Python, the most idiomatic and efficient way to reverse a string is using extended slicing: s[::-1].",
+    "content": "Here is how to reverse a string in Python:\n\nMethod 1: Using Extended Slicing (Recommended - O(n) time):\n```python\ntext = \"hello\"\nreversed_text = text[::-1]\nprint(reversed_text)  # Output: \"olleh\"\n```\nExplanation: Slicing with `[::-1]` steps through the sequence backward with a stride of -1.\n\nMethod 2: Using reversed() and join():\n```python\ntext = \"hello\"\nreversed_text = \"\".join(reversed(text))\n```\n\nMethod 3: Using a custom loop:\n```python\ndef reverse_string(s: str) -> str:\n    result = \"\"\n    for char in s:\n        result = char + result\n    return result\n```"
+  },
+  {
+    "topic": "alexander_graham_bell_bio",
+    "title": "Alexander Graham Bell Biography and Birth",
+    "keywords": [
+      "when was he born",
+      "when was alexander graham bell born",
+      "alexander graham bell birth date",
+      "where was alexander graham bell born"
+    ],
+    "summary": "Alexander Graham Bell was born on March 3, 1847 in Edinburgh, Scotland, and died on August 2, 1922.",
+    "content": "Alexander Graham Bell was born on March 3, 1847, in Edinburgh, Scotland. He was an eminent scientist, inventor, and educator whose mother and wife were both deaf, profoundly shaping his research into acoustics, speech, and vocal physiology. He patented the first practical telephone in 1876 and later co-founded the American Telephone and Telegraph Company (AT&T). Bell died on August 2, 1922, at the age of 75, in Nova Scotia, Canada."
+  }
+]

@@ -1,0 +1,421 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Hey there",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Greetings",
+        "What's up",
+        "How are you",
+        "How's it going",
+        "Hello NexaAI",
+        "Hi there bot",
+        "Howdy",
+        "Nice to meet you",
+        "Hi assistant",
+        "Hello there",
+        "Yo",
+        "Good day",
+        "Hi friend"
+      ],
+      "responses": [
+        "Hello! I am NexaAI, your intelligent NLP assistant. How can I help you today?",
+        "Hi there! Welcome to NexaAI. What would you like to explore or discuss today?",
+        "Greetings! I am ready to answer your questions or assist you with any topic.",
+        "Hey! Great to have you here. Ask me anything, or let me know what you need help with!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Catch you later",
+        "Have a good day",
+        "I'm leaving now",
+        "Talk to you later",
+        "Good night",
+        "See ya",
+        "Farewell",
+        "Bye for now",
+        "I need to go now",
+        "Catch up soon",
+        "Have a nice evening",
+        "Signing off",
+        "I must be going",
+        "Take care and goodbye"
+      ],
+      "responses": [
+        "Goodbye! Have a productive and wonderful day ahead.",
+        "See you later! Feel free to return whenever you have more questions.",
+        "Farewell! Don't hesitate to reach out if you need further assistance.",
+        "Take care! It was a pleasure chatting with you."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Thank you very much",
+        "Thanks a lot",
+        "Appreciate your help",
+        "Much appreciated",
+        "That was very helpful",
+        "Thanks for the info",
+        "Thank you kindly",
+        "Many thanks",
+        "I appreciate that",
+        "Super helpful thanks",
+        "Thanks assistant",
+        "That answered my question thanks",
+        "Awesome thanks",
+        "Grateful for your assistance"
+      ],
+      "responses": [
+        "You're very welcome! I'm always happy to help.",
+        "Glad I could be of assistance! Let me know if you need anything else.",
+        "Anytime! Feel free to ask more questions whenever you're ready.",
+        "My pleasure! Helping you find answers is what I am here for."
+      ]
+    },
+    {
+      "tag": "affirmation",
+      "patterns": [
+        "Yes",
+        "Yeah",
+        "Sure",
+        "Definitely",
+        "Of course",
+        "Sounds good",
+        "Okay",
+        "Alright",
+        "Yes please",
+        "Correct",
+        "Right",
+        "Got it",
+        "Understood",
+        "Sounds like a plan",
+        "Absolutely yes",
+        "Affirmative"
+      ],
+      "responses": [
+        "Great! Let's proceed. What would you like to focus on?",
+        "Understood! Let me know how you would like to continue.",
+        "Perfect. I am here whenever you want to dive in further."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "Can you help me",
+        "I need help",
+        "How do I use this",
+        "What can you do for me",
+        "Assist me",
+        "Support me",
+        "Guide me",
+        "How can you assist me",
+        "I need guidance",
+        "How does this chatbot work",
+        "Show help",
+        "Need some help here",
+        "Can I get assistance",
+        "Please guide me on how to use NexaAI"
+      ],
+      "responses": [
+        "I can help you in multiple ways: answer technical questions across AI, ML, programming, and computer science; solve safe math calculations; explain concepts; or handle conversational queries. Just ask directly!",
+        "I am your hybrid AI assistant. You can ask me general questions (e.g. 'What is Machine Learning?'), math calculations (e.g. '25 * 8'), comparisons ('AI vs ML'), or conversational requests.",
+        "Need assistance? You can ask me questions about computer science, software engineering, databases, networking, or ask me to perform math calculations. How may I assist you?"
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "What can you do",
+        "What are your capabilities",
+        "What features do you have",
+        "Tell me what you can do",
+        "List your capabilities",
+        "What are your skills",
+        "What topics do you know",
+        "What can I ask you",
+        "What are your functions",
+        "Explain your capabilities",
+        "Show your skill set",
+        "What are you capable of doing"
+      ],
+      "responses": [
+        "Here are my core capabilities:\n1. Machine Learning Intent Understanding (recognizing greetings, feedback, services, etc.)\n2. General Knowledge Retrieval across computer science, AI, engineering, and science\n3. Safe Mathematical Calculations (arithmetic, powers, percentages)\n4. Context-aware conversational follow-up questions\n5. Optional Local LLM generation via Ollama.",
+        "I feature a hybrid NLP architecture: intent classification with TF-IDF + Logistic Regression, an extractive knowledge retrieval engine for general questions, and a safe mathematical parser. Ask me any question!"
+      ]
+    },
+    {
+      "tag": "about_bot",
+      "patterns": [
+        "Who are you",
+        "What is your name",
+        "Tell me about yourself",
+        "What are you",
+        "Are you an AI",
+        "Who created you",
+        "Introduce yourself",
+        "What is NexaAI",
+        "Give me an introduction of who you are",
+        "Are you a virtual assistant",
+        "Tell me your identity"
+      ],
+      "responses": [
+        "I am NexaAI, a hybrid conversational AI assistant powered by natural language processing and machine learning. I combine ML intent classification, safe mathematical reasoning, and semantic knowledge retrieval.",
+        "My name is NexaAI! I am designed to process natural language queries, answer general-domain and technical questions, perform calculations, and hold context-aware conversations."
+      ]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What services do you offer",
+        "Tell me about your services",
+        "What solutions do you provide",
+        "What are your product offerings",
+        "Services list",
+        "What do you do as a company",
+        "Business services",
+        "What commercial solutions do you build",
+        "What consulting services do you have",
+        "What are company offerings",
+        "Provide a summary of services"
+      ],
+      "responses": [
+        "We offer enterprise AI solutions, natural language processing pipelines, custom machine learning model development, intelligent conversational chatbots, and automated analytics consulting.",
+        "Our services include end-to-end AI/ML model deployment, conversational agent design, data science consulting, and cloud software engineering solutions."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you",
+        "Contact info",
+        "What is your email",
+        "What is your phone number",
+        "Customer care number",
+        "How to reach support",
+        "Contact support team",
+        "How can I contact customer support",
+        "Where can I get in touch",
+        "Give me contact details",
+        "Reach out to company",
+        "What is your telephone number",
+        "Who do I email for help"
+      ],
+      "responses": [
+        "You can reach our team via email at support@nexaai.internal or call our support line at +1 (800) 555-0199, Monday through Friday from 9 AM to 6 PM EST.",
+        "For inquiries, feel free to write to contact@nexaai.internal or visit our support desk online. Our team responds within 24 business hours."
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What are your hours",
+        "What time are you open",
+        "When are you available",
+        "Operating hours",
+        "Business hours",
+        "Are you open on weekends",
+        "Working hours",
+        "What is your schedule",
+        "Office opening hours",
+        "What hours do you operate",
+        "When do you close",
+        "Support operational schedule"
+      ],
+      "responses": [
+        "NexaAI is available 24/7 online for automated assistance! Our human support specialists are available Monday to Friday, 9:00 AM to 6:00 PM EST.",
+        "Our digital chatbot services operate round the clock 24/7/365. Support staff are on duty weekdays from 9:00 AM to 6:00 PM EST."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where are you located",
+        "Where is your office",
+        "What is your address",
+        "Company headquarters",
+        "Where are you based",
+        "Office location",
+        "Where is NexaAI located",
+        "Physical office location",
+        "Where is headquarters situated",
+        "Which city are you in",
+        "Corporate address"
+      ],
+      "responses": [
+        "NexaAI is headquartered at 100 Innovation Parkway, Suite 400, Tech District, San Francisco, CA 94105.",
+        "Our primary research and engineering center is in San Francisco, California, with distributed engineering teams across North America and Europe."
+      ]
+    },
+    {
+      "tag": "pricing",
+      "patterns": [
+        "How much does it cost",
+        "What is your pricing",
+        "Pricing plans",
+        "Is this free",
+        "Cost of services",
+        "Subscription tiers",
+        "How expensive is it",
+        "Do you have a free tier",
+        "What are subscription costs",
+        "Pricing structure",
+        "How much to buy",
+        "Pricing rates"
+      ],
+      "responses": [
+        "We offer flexible tiers: a Free Community Tier for individuals and open-source developers, a Pro Plan at $29/month, and custom Enterprise tiers for scalable infrastructure.",
+        "Our pricing starts with a generous free tier for local and testing use. For cloud-hosted multi-tenant deployments, our plans scale based on compute and API throughput."
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "I need customer support",
+        "Technical support",
+        "Help desk",
+        "Report an issue",
+        "Troubleshoot problem",
+        "Customer service",
+        "System problem",
+        "Submit a support ticket",
+        "Need help troubleshooting an issue",
+        "Assistance with technical bug",
+        "IT support helpdesk"
+      ],
+      "responses": [
+        "Our support desk is ready to help. You can describe your technical issue here, or submit an incident ticket to helpdesk@nexaai.internal with your log outputs.",
+        "Technical support is here for you. Please share what problem you are encountering, or reach out to support@nexaai.internal for ticket tracking."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "I want to give feedback",
+        "Leave a review",
+        "Suggest an improvement",
+        "Send feedback",
+        "Rate this conversation",
+        "User feedback",
+        "I have a suggestion",
+        "Share my thoughts and feedback",
+        "Provide review on this chatbot",
+        "Recommendations for improvement",
+        "Submit user rating"
+      ],
+      "responses": [
+        "Thank you! We deeply appreciate user feedback. Please type your thoughts or suggestions, and our development team will review them in our continuous improvement cycles.",
+        "Your feedback helps NexaAI get smarter every day! Feel free to share your comments or feature requests directly here."
+      ]
+    },
+    {
+      "tag": "human_agent",
+      "patterns": [
+        "I want to talk to a human",
+        "Can I speak with a real person",
+        "Transfer me to an agent",
+        "Human representative",
+        "Connect me to human support",
+        "Talk to an operator",
+        "I want real person assistance",
+        "Connect to customer care agent",
+        "Transfer call to representative",
+        "Need human operator"
+      ],
+      "responses": [
+        "I can connect you with a representative! Please send an email to agent-dispatch@nexaai.internal or call +1 (800) 555-0199 during operating hours (Mon-Fri 9am-6pm EST).",
+        "While I am an automated hybrid NLP assistant, our human support staff is available on weekdays. You can request a callback via support@nexaai.internal."
+      ]
+    },
+    {
+      "tag": "status",
+      "patterns": [
+        "Is the system working",
+        "What is system status",
+        "Server health",
+        "Is everything online",
+        "System operational",
+        "Check health",
+        "Are servers up",
+        "System uptime status",
+        "Is service down",
+        "Check operational status"
+      ],
+      "responses": [
+        "All systems are currently operational! NLP inference engine, knowledge base retrieval, and calculator modules are functioning at 100% capacity.",
+        "System health is normal. Latency is minimal and the local NLP hybrid engine is active."
+      ]
+    },
+    {
+      "tag": "security_privacy",
+      "patterns": [
+        "Is my data secure",
+        "What is your privacy policy",
+        "Do you save my messages",
+        "Data privacy",
+        "Is this confidential",
+        "Security practices",
+        "How is user data protected",
+        "Are my chat logs private",
+        "Data security assurance",
+        "Is privacy guaranteed"
+      ],
+      "responses": [
+        "Privacy is a top priority. All conversations in NexaAI run locally in your session. We do not transmit your conversations to third-party ad networks or external tracking systems.",
+        "Your interactions are processed privately on your local deployment. We adhere to strict data minimization and encryption standards."
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "I want to complain",
+        "I am not happy with this",
+        "Terrible service",
+        "This is not working properly",
+        "File a complaint",
+        "I am dissatisfied",
+        "Poor customer experience",
+        "Lodge a formal grievance",
+        "Unacceptable service quality",
+        "This is frustrating and broken"
+      ],
+      "responses": [
+        "I sincerely apologize for the inconvenience. We take complaints very seriously. Please let me know what went wrong, or email escalations@nexaai.internal so our management team can address it immediately.",
+        "I am sorry to hear that you had an unsatisfactory experience. Please tell me more about what happened so we can make things right."
+      ]
+    },
+    {
+      "tag": "clear_context",
+      "patterns": [
+        "Reset chat",
+        "Clear conversation",
+        "Start over",
+        "New conversation",
+        "Reset context",
+        "Forget previous messages",
+        "Clear history",
+        "Wipe chat memory",
+        "Begin fresh chat session",
+        "Reset session state"
+      ],
+      "responses": [
+        "Conversation context has been refreshed. What new topic would you like to discuss?",
+        "History cleared! Ready for a fresh conversation. What would you like to ask?"
+      ]
+    }
+  ]
+}
